@@ -1,0 +1,41 @@
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-xs-6 col-md-4"></div>
+       <div class="col-xs-6 col-md-4">
+            <div class="btn-group btn-group-justified" style="padding-top:100px">
+              <div class="btn-group" role="group" >
+                <button type="button" class="btn btn-default btn-primary btn-lg" id="Btn">로또지롱</button>
+              </div>
+             </div>
+      </div>
+     <div class="col-md-4"></div>
+   </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-6 col-md-4"></div>
+         <div class="col-xs-6 col-md-4">
+            <ul class="list-group">
+              <li class="list-group-item">
+                 <center style="padding-top:80px; padding-bottom:80px">
+                     <!--<%=@lotto_numbers%>-->
+                  <%= image_tag @lotto_num_image1 %>
+                  <%= image_tag @lotto_num_image2 %>
+                  <%= image_tag @lotto_num_image3 %>
+                  <%= image_tag @lotto_num_image4 %>
+                  <%= image_tag @lotto_num_image5 %>
+                  <%= image_tag @lotto_num_image6 %>
+                  </center>
+               </li>
+            </ul>
+         </div>
+      <div class="col-xs-6 col-md-4"></div>
+    </div>
+ </div>
+ 
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $('#Btn').click(function() {
+                location.reload();
+            });
+        });       
+</script>
